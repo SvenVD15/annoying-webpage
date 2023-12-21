@@ -149,3 +149,12 @@ img:hover {
     }
 }
 
+.original{
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+
+.original:hover{
+    color: white;
+    background-color: #c62146;
+}
