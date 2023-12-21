@@ -89,7 +89,7 @@ html, body{
 
 /* Animations */
 
-/* (1) Images draaien */
+/* (1) ./img draaien */
 img:hover {
     transform: rotate(180deg);
     transition: transform 0.2s ease-in-out;
