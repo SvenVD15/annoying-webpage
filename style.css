@@ -1,0 +1,151 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    animation: animate 1s linear infinite;
+}
+
+.grid-container{
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 10vw 10vw 10vw 20vw 50vw;
+    grid-template-rows: 10vh 60vh 30vh;
+    
+}
+
+.grid-item{
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.item1, .item3, .item4{
+    grid-column: 1 / span 4;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: transparent;
+}
+
+.item1{
+    grid-row: 1;
+}
+
+.phone{
+    grid-column: 5;
+    grid-row: 1 / span 3;
+    background-color: #c62146;
+    align-items: center;
+}
+
+.item3{
+    grid-row: 2;
+    margin-top: 2%;
+}
+
+.item4{
+    grid-row: 3;
+    font-size: 20px;
+    background: transparent;
+}
+
+#iphone{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+#logo{
+    width: 40px;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+#p-item3{
+    font-size: 16px;
+}
+
+#buttonIOS{
+    border: 0;
+    background-color: transparent;
+}
+
+#buttonAndroid{
+    border: 0;
+    background-color: transparent;
+}
+
+.button{
+    border: none;
+    background-color: transparent;
+}
+
+.button :hover{
+    cursor: pointer;
+}
+
+/* Animations */
+
+/* (1) Images draaien */
+img:hover {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+/* (2) Veranderd kleur bij hover */
+#p-item3:hover{
+    color: #FF00FF;
+}
+
+#h4-item3:hover{
+    color: #00FF00;
+}
+
+#p-item4:hover{
+    color: #FF0000;
+}
+
+@media screen and (max-width: 600px) {
+    body,html {
+        height: 100%;
+    }
+    .grid-container {
+        grid-template-columns: 20% 20% 20% 20% 20%; /* Adjusted column widths for larger screens */
+        grid-template-rows: 10vh 60vh 30vh 30vh ;
+    }
+    .phone{
+        grid-column: 1 / span 5;
+        grid-row: 4 / span 3;
+        background-color: #c62146;
+    }
+    .item4{
+        margin-top: 28%;
+    }
+
+}
+
+@keyframes animate{
+   0%{
+    background-color: white;
+   }
+   20%{
+    background-color: #FF0000;
+   }
+    40%{
+     background-color: #00FF00;
+    }
+    60%{
+     background-color: #0000FF;
+    }
+    80%{
+     background-color: #FFFF00;
+    }
+    100%{
+     background-color: white;
+    }
+}
+
